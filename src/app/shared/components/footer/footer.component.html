@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>Hecho por samuel reyes
+    <div class="row between-xs middle-xs header-row">
+       <nav>
+        
+    
+        
+        <a mat-button  routerLink="/contact" routerLinkActive="active">Contact</a>
+    
+    </nav>
+    
+    </div>
+    <div>
+        <form class="example-form">
+        <mat-form-field class="example-full-width">
+        
+        
+    
+        <input matInput placeholder="Digite su correo" [formControl]="emailField" type="text">
+      
+        <button mat-raised-button *ngIf="emailField.valid" (click)="sendMail()" >Enviar</button>
+    </mat-form-field>
+    </form>
+    
+    </div>
+
+    </mat-toolbar-row>
+
+
+</mat-toolbar>
